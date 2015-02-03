@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: your name
-  description: 
-  company: your company (optional)
+  author: Monty Taylor
+  description: Role to run puppet remotely
+  company: OpenStack Infra
   # Some suggested licenses:
   # - BSD (default)
   # - MIT
@@ -10,27 +10,27 @@ galaxy_info:
   # - GPLv3
   # - Apache
   # - CC-BY
-  license: license (GPLv2, CC-BY, etc)
+  license: Apache
   min_ansible_version: 1.2
   #
   # Below are all platforms currently available. Just uncomment
   # the ones that apply to your role. If you don't see your 
   # platform on this list, let us know and we'll get it added!
   #
-  #platforms:
-  #- name: EL
-  #  versions:
-  #  - all
+  platforms:
+  - name: EL
+    versions:
+    - all
   #  - 5
   #  - 6
   #  - 7
-  #- name: GenericUNIX
-  #  versions:
-  #  - all
+  - name: GenericUNIX
+    versions:
+    - all
   #  - any
-  #- name: Fedora
-  #  versions:
-  #  - all
+  - name: Fedora
+    versions:
+    - all
   #  - 16
   #  - 17
   #  - 18
@@ -40,9 +40,9 @@ galaxy_info:
   #  versions:
   #  - all
   #  - any
-  #- name: opensuse
-  #  versions:
-  #  - all
+  - name: opensuse
+    versions:
+    - all
   #  - 12.1
   #  - 12.2
   #  - 12.3
@@ -53,13 +53,13 @@ galaxy_info:
   #  - all
   #  - 2013.03
   #  - 2013.09
-  #- name: GenericBSD
-  #  versions:
-  #  - all
+  - name: GenericBSD
+    versions:
+    - all
   #  - any
-  #- name: FreeBSD
-  #  versions:
-  #  - all
+  - name: FreeBSD
+    versions:
+    - all
   #  - 8.0
   #  - 8.1
   #  - 8.2
@@ -69,9 +69,9 @@ galaxy_info:
   #  - 9.1
   #  - 9.1
   #  - 9.2
-  #- name: Ubuntu
-  #  versions:
-  #  - all
+  - name: Ubuntu
+    versions:
+    - all
   #  - lucid
   #  - maverick
   #  - natty
@@ -81,22 +81,22 @@ galaxy_info:
   #  - raring
   #  - saucy
   #  - trusty
-  #- name: SLES
-  #  versions:
-  #  - all
+  - name: SLES
+    versions:
+    - all
   #  - 10SP3
   #  - 10SP4
   #  - 11
   #  - 11SP1
   #  - 11SP2
   #  - 11SP3
-  #- name: GenericLinux
-  #  versions:
-  #  - all
+  - name: GenericLinux
+    versions:
+    - all
   #  - any
-  #- name: Debian
-  #  versions:
-  #  - all
+  - name: Debian
+    versions:
+    - all
   #  - etch
   #  - lenny
   #  - squeeze
@@ -105,7 +105,7 @@ galaxy_info:
   # Below are all categories currently available. Just as with
   # the platforms above, uncomment those that apply to your role.
   #
-  #categories:
+  categories:
   #- cloud
   #- cloud:ec2
   #- cloud:gce
@@ -117,7 +117,7 @@ galaxy_info:
   #- development
   #- monitoring
   #- networking
-  #- packaging
+  - packaging
   #- system
   #- web
 dependencies: []
